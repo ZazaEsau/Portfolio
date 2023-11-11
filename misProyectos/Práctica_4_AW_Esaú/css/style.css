@@ -1,0 +1,57 @@
+.center {
+    
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.small-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.small-font {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.text-with-background {
+    background-color: #ffc720;
+    
+    background-size: 100%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.mi-div {
+    margin: 10px; /* Puedes ajustar el valor según tus necesidades */
+  }
+
+.div-color{
+    background-color: rgb(5, 35, 70);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #ffc720;
+    color: #ffffff;
+    text-align: center;
+}
+
+td {
+    background-color: #ffedb8;
+    color: #555;
+    text-align: left;
+}

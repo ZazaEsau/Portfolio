@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="form-register" >
+        <div>
+            <h4>Ingrese los siguientes datos para registrarse en la app:</h4>
+            <form action="respuesta.php" method="post">
+                <!-- name--> 
+                <label for="nombre">Nombre:</label>
+                <input class="form-control controls" type="text" name="nombre" id="nombre">
+                <!-- email-->
+                <label for="correo">Correo electrónico:</label>
+                <input class="form-control controls" type="email" name="correo" id="correo">
+                <!-- number-->
+                <label for="edad">Edad:</label>
+                <input class="form-control controls" type="number" name="edad" id="edad">
+                <!-- tel-->
+                <label for="telefono">Número de teléfono:</label>
+                <input class="form-control controls" type="tel" name="telefono" id="telefono">
+                <!-- url-->
+                <label for="url">Sitio web favorito:</label>
+                <input class="form-control controls" type="url" name="url" id="url">
+                <!-- range-->
+                <label for="rango">Nivel de felicidad:</label>
+                <input class="form-control controls" type="range" name="rango" id="rango" min="0" max="3">
+                <!-- radio -->
+                <label for="genero">Genero:</label>
+                <input class="form-check-input controls" type="radio" name="genero" id="genero" value="hombre">Hombre
+                <input class="form-check-input controls" type="radio" name="genero" id="genero" value="mujer">Mujer
+                <!-- date-->
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input class="form-control controls" type="date" name="fechaNacimiento" id="fechaNacimiento">
+                <!-- color-->
+                <label for="color">Color favorito:</label>
+                <input class="form-control controls" type="color" name="color" id="color">
+                <!-- textarea-->
+                <label for="comentarios">Comentarios:</label>
+                <textarea class="form-control controls" name="comentarios" id="comentarios" cols="30" rows="5" style="resize: none;"></textarea>
+                <!-- select--> <!--terminos y condiciones-->
+                <label for="terminos">Acepto términos y condiciones</label>
+                <select class="form-control controls" name="terminos" id="terminos">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select> 
+                <!-- Botón registrarse-->
+                <br>
+                <button class="form-register botons" type="submit">Registrarse</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
